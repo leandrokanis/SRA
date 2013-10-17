@@ -1,6 +1,60 @@
-SRA
-===
+#SRA - Sistema de Registro de Atendimento
 
+Wiki do Projeto: https://github.com/gbrego/SRA/wiki
+
+Scrum Wise: https://scrumwise.com
+
+Pasta do Dropbox: https://www.dropbox.com/sh/ddhhvym6w6v6n4i/VWvNQVo53n
+
+
+
+===
+Regras de boa convivência com a programação
+
+1. Antes de Começar, verifique o estado do repositório local com 
+
+		git status
+
+2. Atualize a lista de branches com o repositório remoto
+
+		git fetch --prune
+
+		
+3. Fazer uma branch para cada tarefa a ser desempenhada
+		
+		git checkout -b
+
+
+
+
+4. Após o fim da tarefa 
+
+		     
+         git commit
+
+Após a abrir a tela de mensagem:
+
+        Mensagem do Commit
+        Signed-off-by: Nome Completo <email@email.com>
+
+
+5. Errou algo no commit anterior e deseja modificar:
+
+	git commit --amend
+
+
+6. Escreva seu código ruby em inglês.
+
+
+7. Ruby utiliza o padrão de codificação underscore:
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+===
 ##Usando o Git:
 Este repositório pode ser baixado pelo comando:
 
@@ -48,3 +102,6 @@ Push do Commit para o Github:
 Resetando o repositório para o estado do último commit :
         
         git reset --hard       
+
+==
+##Usando o Rails:
