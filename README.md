@@ -1,4 +1,7 @@
+<img src="http://www.marca.unb.br/img/assinatura_neg/as_comp_neg.gif" />
 #SRA - Sistema de Registro de Atendimento
+
+
 
 Wiki do Projeto: https://github.com/gbrego/SRA/wiki
 
@@ -9,7 +12,7 @@ Pasta do Dropbox: https://www.dropbox.com/sh/ddhhvym6w6v6n4i/VWvNQVo53n
 
 
 ===
-Regras de boa convivência com a programação
+###Regras de boa convivência com a programação em equipes
 
 1. Antes de Começar, verifique o estado do repositório local com 
 
@@ -28,31 +31,28 @@ Regras de boa convivência com a programação
 
 
 4. Após o fim da tarefa 
-
-		     
-         git commit
+     	
+	git commit
 
 Após a abrir a tela de mensagem:
 
         Mensagem do Commit
         Signed-off-by: Nome Completo <email@email.com>
-
-
+        
 5. Errou algo no commit anterior e deseja modificar:
 
 	git commit --amend
 
-
-6. Escreva seu código ruby em inglês.
-
-
-7. Ruby utiliza o padrão de codificação underscore:
+6. Escreva seu código Ruby em inglês.
+7. Comente suas funções de maneira concisa, isto é, transmita a informação com o menor número de caracteres
+8. Ruby utiliza o padrão de codificação underscore:
 
 ```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
+
 
 ===
 ##Usando o Git:
