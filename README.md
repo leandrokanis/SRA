@@ -4,19 +4,21 @@ SRA
 ##Usando o Git:
 Este repositório pode ser baixado pelo comando:
 
-	git clone https://github.com/gbrego/SRA.git 
+	    git clone https://github.com/gbrego/SRA.git 
 
 Atualizar a lista de branches:
 
-	 git fetch --prune
+	     git fetch --prune
 
 Mudando de Branchs:
 	 
-	 git checkout <nome da branch>
+	     git checkout <nome da branch>
+
 
 Criando uma Branch:
          
          git checkout -b <nome da branch>
+         
 
 Adicionando arquivos a um commit:
          
