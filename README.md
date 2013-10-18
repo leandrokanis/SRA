@@ -5,7 +5,6 @@
 
 Wiki do Projeto: https://github.com/gbrego/SRA/wiki
 
-Scrum Wise: https://scrumwise.com
 
 Pasta do Dropbox: https://www.dropbox.com/sh/ddhhvym6w6v6n4i/VWvNQVo53n
 
