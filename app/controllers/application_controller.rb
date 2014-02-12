@@ -1,25 +1,15 @@
 # -*- encoding : utf-8 -*-
 require 'cancan'
 class ApplicationController < ActionController::Base
+  rescue_from DeviseLdapAuthenticatable::LdapException do |exception|
+    render :text => exception, :status => 500
+  end
   protect_from_forgery
   include ApplicationHelper
 
-
+  
   def after_sign_in_path_for(resource)
-    if current_user.as_user_type ==  'Aluno'
-      new_atendimento_path
-    elsif current_user.as_user_type == 'Professor'
-      if current_user.has_role? :admin
-        atendimentos_path
-      else
-        new_atendimento_path
-      end
-    elsif current_user.as_user_type == 'Servidor'
-      atendimentos_path
-    elsif current_user.as_user_type == 'Comunidade'
-      new_atendimento_path
-    end
-
+    new_atendimento_path
   end
 
   rescue_from CanCan::AccessDenied do |exception|

@@ -22,6 +22,8 @@ gem 'cancan'
 gem 'coveralls', require: false
 gem "rolify"
 
+gem 'devise_ldap_authenticatable'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
